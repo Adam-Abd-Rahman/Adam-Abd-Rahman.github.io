@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+    <title>Adam Abd Rahman portfolio website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">  <!-- https://fontawesome.com/-->  
+    <link rel="stylesheet" href="css/magnific-popup.css">       <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/tooplate-vertex.css">
+    <link rel="icon" type="image/x-icon" href="img/gallery/favicon_package_v0.16/favicon-32x32.png">
+<!--
+
+Tooplate 2124 Vertex
+
+https://www.tooplate.com/view/2124-vertex
+
+-->
+
+</head>
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+
+    <!-- Site logo -->
+    <h1 class="tm-brand">
+        <i class="fas fa-mountain fa-2x tm-brand-icon"></i>
+        <span class="tm-brand-text">Vertex</span>        
+    </h1>
+
+    <!-- Nav -->
+    <nav class="tm-nav">
+        <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul id="tm-main-nav">
+            <li class="nav-item">                                
+                <a href="#intro" class="nav-link current">
+                    Welcome
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#services" class="nav-link">
+                    Skills
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#gallery" class="nav-link">
+                    Work
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-link">
+                    My future work
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <main>
+        <div id="intro" class="tm-section">
+            <!-- Intro left -->
+            <div class="tm-section-col tm-content">
+                <div class="tm-media">
+                    <div class="tm-media-body">
+                        <p>
+                                "Live as if you were to die tomorrow. Learn as if you were to live forever" - Mahatma Gandhi
+                        </p>
+                        <h2 class="tm-text-primary">About me and welcome to my website</h2>
+                        <p class="tm-mb-20 tm-text-small">
+                            Hello and welcome to my website! On this site, I will show you all of my portfolio work, which mostly includes videos that are either live action or animations.
+                        </p>
+                        <p class="tm-mb-20 tm-text-small">
+                            I have a passion to be a junior animator and filmmaker. I am good at storytelling and making up stories such as sci-fi, fantasy and horror. I am creative because I have a lot of imagination. I like to make videos and create animations, and have experience in video editing and motion graphics. I often make decisions based on other team members’ ideas. I am always patient, and am disability aware because I have Asperger’s Syndrome.
+                        </p>
+                        <p class="tm-mb-50">
+                                I like toys, cartoons, retrogaming, vehicles and travel.
+                        </p>
+                        <hr class="tm-hr tm-mr">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Intro right -->
+            <div class="tm-section-col tm-parallax" data-parallax="scroll" data-image-src="img/vertex-bg-01.jpg"></div>
+        </div> <!-- #intro -->
+
+        <div id="services" class="tm-section">
+            <!-- Services left -->
+            <div class="tm-section-col tm-content">
+                <h2 class="tm-text-primary">Skills</h2>
+                <p>Here are my skills:</p>
+               <ul>
+                    <li>Photoshop</li>
+                    <li>After Effects</li>
+                    <li>Premier Pro</li>
+                    <li>Animate</li>
+                    <li>Animation-Ish</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Javascript library: P5.js</li>
+                    <li>Javascript library: Three.js</li>
+                    <li>Scratch</li>
+                    <li>Microsoft Word</li>
+                    <li>Microsoft Excel</li>
+                    <li>Python</li>
+                    <li>FMOD Studio</li>
+                    <li>Lego Mindstorm</li>
+                    <li>Max/MSP</li>
+                    <li>Autodesk Maya</li>
+                </ul> 
+                <hr class="tm-hr tm-ml tm-sm-mt-30">
+            </div>
+            
+            <!-- Services right -->
+            <div class="tm-section-col tm-parallax" data-parallax="scroll" data-image-src="img/vertex-bg-02.jpg"></div>
+        </div> <!-- #services -->
+
+                       <div id="gallery" class="tm-content tm-content-small-top">
+            <div class="tm-gallery-container">
+                <h2 class="tm-text-primary tm-text-right tm-gallery-header">Work</h2> 
+                <div class="tm-gallery tm-mb-80">
+                <video width="280" height="150" controls>
+                    <source src="img/gallery/Like and Subscribe.mp4" type="video/mp4">
+                </video>                   
+                <video width="280" height="150" controls>
+                    <source src="img/gallery/Blur%20driver%20license.mp4" type="video/mp4">
+                </video>                    
+                <video width="280" height="150" controls>
+                    <source src="img/gallery/My trip to Cardiff.mp4" type="video/mp4">
+                </video>                     
+                <video width="280" height="150" controls>
+                    <source src="img/gallery/05.mp4" type="video/mp4">
+                </video>
+                <video width="280" height="150" controls>
+                    <source src="img/gallery/Rotoscoping%20test.mp4" type="video/mp4">
+                </video>
+                <video width="280" height="150" controls>
+                    <source src="img/gallery/My After effects portfolio.mp4" type="video/mp4">
+                </video>
+                 <video width="280" height="150" controls>
+                    <source src="img/gallery/Animated%20metro%20train.mp4" type="video/mp4">
+                </video> 
+            </div>
+            <div class="tm-paging tm-mb-130"></div>
+        </div>
+    </div>
+
+
+    <div id="about" class="tm-section">
+        <!-- About left -->
+                        <div class="tm-section-col tm-content tm-content-small">
+                            <h2 class="tm-text-primary">My future work</h2>
+                            <p>I am planning to make 5 web series about railway infrastructures from all over the world. The show presenters are self-aware talking trains.</p>
+                            <p>They are all quite funny and entertaining. I also want to make a web series about the secrets of Bristol in England and another one about Bristol aircraft.</p>
+                            <p>I also want to make animation videos about Special Containment Procedures (SCP) subjects that includes transportation such as trains. These videos are animated by me using Abode Character Animator and Animation-Ish. However I am not a professional animator.</p>
+                            <div class="tm-text-right tm-mb-130">
+                                <a href="#contact" class="tm-btn tm-btn-next">Contact Me</a>
+                            </div>
+                        </div>
+
+                        <!-- About right -->
+                        <div class="tm-section-col tm-parallax" data-parallax="scroll" data-image-src="img/vertex-bg-03.jpg"></div>
+</div> <!-- #about -->
+
+        <div id="contact" class="tm-section">
+            <!-- Contact left -->
+            <div class="tm-section-col tm-content tm-content-small">
+                <h2 class="tm-text-primary">Contact Me</h2>
+                <p>
+                   Contact me via this form.
+                </p> 
+                 <form id="contact-form" action="https://formsubmit.co/adamabdrahman5@gmail.com" method="POST" class="tm-contact-form tm-mb-200">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="name" class="form-control rounded-0" placeholder="Name" required />
+                        <input type="email" name="email" class="form-control rounded-0" placeholder="Email" required />
+                        <textarea rows="6" name="message" class="form-control rounded-0" placeholder="Message" required></textarea>
+                        <div class="form-group tm-text-right">
+                        <div class="popup" onclick="myFunction()">
+                            <button type="submit" class="tm-btn">Send</button>
+                            <span class="popuptext" id="myPopup">Message now Send!</span>
+                        </div>                        
+                    </div>
+                </form>
+                
+                <footer class="tm-copyright tm-text-small">
+                    Copyright 2021 Vertex Company 
+                    
+                    - Design: <a rel="nofollow" href="https://www.tooplate.com" class="tm-text-link" target="_parent">Tooplate</a>
+                </footer>              
+            </div>
+            
+            <!-- Contact right -->
+            <div class="tm-section-col tm-parallax tm-relative" data-parallax="scroll" data-image-src="img/vertex-bg-04.jpg">
+            </div> 
+        </div> <!-- #contact -->
+    </main>
+
+    <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+
+        $(function(){
+            
+            /*************** Navigation *****************/
+
+            const tmMainNav = $("#tm-main-nav");
+
+            tmMainNav.singlePageNav({
+                filter: ':not(.external)'
+            });
+
+            $('.navbar-toggler').click(function(e) {
+                e.stopPropagation();
+                tmMainNav.toggleClass('show');
+            });
+
+            $("html").click(function(e) {
+                $("#tm-main-nav").removeClass("show");
+            });
+
+            /****************** Smooth Scrolling *****************/
+
+            $(".tm-btn-next").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        // window.location.hash = hash;
+                    });
+                }
+            });
+
+            $('.tm-brand-icon').on('click', function(event) {
+                $('html, body').animate({
+                        scrollTop: $('#intro').offset().top
+                    }, 800);
+            });
+
+            /****************** Gallery ******************/
+
+            const galleryItems = document.querySelector(".tm-gallery").children;
+            const itemsPerPage = 10;
+            const totalPages = Math.ceil(galleryItems.length / itemsPerPage);
+            const pageAttribute = 'data-page';
+
+            function setPagination(currentPage) {
+                for(let i = 1; i <= totalPages; i++) {
+                    var $pager = '';
+                    
+                    if(currentPage == i) {
+                        $pager = $('<a href="javascript:void(0);" class="active tm-paging-link" '+pageAttribute+'="'+i+'"></a>');
+                    } else {
+                        $pager = $('<a href="javascript:void(0);" class="tm-paging-link" '+pageAttribute+'="'+i+'"></a>');
+                    }
+
+                    $pager.html(i);
+
+                    $pager.click(function(){ 
+                        $('.tm-paging-link').removeClass("active");
+                        $(this).addClass('active');
+                        var page = $(this).eq(0).attr(pageAttribute);
+                        showItems(page);
+                    });
+
+                    $pager.appendTo($('.tm-paging'));
+                }
+            }
+
+            function showItems(currentPage) {
+                for(let i = 0; i < galleryItems.length; i++) {
+                    galleryItems[i].classList.remove("show");
+                    galleryItems[i].classList.add("hide");
+
+                    if(i >= (currentPage * itemsPerPage) - itemsPerPage && i < currentPage * itemsPerPage) {
+                        galleryItems[i].classList.remove("hide");
+                        galleryItems[i].classList.add("show");
+                    }
+                }
+            }
+
+            setPagination(1);
+            showItems(1);
+
+            /****************** Magnific Popup ***********/
+
+            $('.tm-gallery').magnificPopup({
+                delegate: 'a',
+                type: 'video',
+                gallery: {
+                    enabled: true
+                }
+            });
+        });
+        
+        // When the user clicks on div, open the popup
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+        
+    </script>
+</body>
+</html>
